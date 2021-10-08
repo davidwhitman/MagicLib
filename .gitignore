@@ -1,4 +1,4 @@
-/jars/
+#/jars/
 
 # Created by https://www.gitignore.io/api/java,kotlin,intellij
 # Edit at https://www.gitignore.io/?templates=java,kotlin,intellij
@@ -97,5 +97,5 @@ gradle-app.setting
 #.run
 
 /build/
-/jars/
+#/jars/
 /out/
