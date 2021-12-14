@@ -7,6 +7,7 @@
         "MagicAutoTrails":"data.scripts.plugins.MagicAutoTrails",
         #"MagicModuleRetreatFix":"data.scripts.plugins.MagicModuleRetreatCleaner",
 		#"MagicNebula":"data.scripts.plugins.MagicNebula",
+		"MagicBountyUtils":"data.scripts.plugins.MagicBountyUtils",
     },
 
     "graphics":{

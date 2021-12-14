@@ -11,6 +11,7 @@ import com.fs.starfarer.api.impl.campaign.ids.MemFlags;
 import com.fs.starfarer.api.impl.campaign.rulecmd.FireBest;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
+import data.scripts.plugins.MagicBountyUtils;
 import data.scripts.util.MagicCampaign;
 import data.scripts.util.MagicTxt;
 import org.apache.log4j.Logger;
@@ -154,8 +155,12 @@ public final class ActiveBounty {
 
         // Flag fleet as important so it has a target icon
         Misc.makeImportant(getFleet(), "magicbounty");
+
         // Add comm reply
-        getFleet().getMemoryWithoutUpdate().set("$MagicLib_Bounty_comm_reply", MagicBountyUtils.replaceStringVariables(this, spec.job_comm_reply));
+        if (MagicTxt.nullStringIfEmpty(spec.job_comm_reply) != null) {
+            getFleet().getMemoryWithoutUpdate().set("$MagicLib_Bounty_comm_reply", MagicBountyUtils.replaceStringVariables(this, spec.job_comm_reply));
+        }
+
         getFleet().getMemoryWithoutUpdate().set("$MagicLib_Bounty_target_fleet", true);
 
         IntelManagerAPI intelManager = Global.getSector().getIntelManager();

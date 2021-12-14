@@ -59,6 +59,7 @@ tasks {
     {
         destinationDirectory.set(file("$rootDir/jars"))
         archiveFileName.set(Variables.jarFileName)
+        exclude("**/MagicBountyUtils*")
     }
 }
 

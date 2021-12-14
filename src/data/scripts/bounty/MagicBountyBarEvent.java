@@ -11,6 +11,7 @@ import com.fs.starfarer.api.fleet.FleetMemberAPI;
 //import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
+import data.scripts.plugins.MagicBountyUtils;
 import data.scripts.util.MagicPaginatedBarEvent;
 import data.scripts.util.MagicSettings;
 import data.scripts.util.MagicVariables;

@@ -12,6 +12,7 @@ import com.fs.starfarer.api.ui.LabelAPI;
 import com.fs.starfarer.api.ui.SectorMapAPI;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
+import data.scripts.plugins.MagicBountyUtils;
 import data.scripts.util.MagicDeserializable;
 import data.scripts.util.MagicTxt;
 import org.apache.log4j.Logger;
